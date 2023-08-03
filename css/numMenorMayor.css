@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  
+  body{
+      background-color: #e5e5f7;
+      background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+      background-position: 0 0,10px 10px;
+      background-size: 20px 20px;
+      display: flex;
+      min-height: 100vh;
+  }
+  
+  #form{
+      background-color: #ffff;
+      margin: auto;
+      width: 90%;
+      max-width: 400px;
+      padding: 4.5em 3em;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+      text-align: center;
+  }
+  
+  .feedback1{
+      max-width: 100%;
+      color:rgb(123, 38, 38);
+      font-size: 25px;
+      visibility: hidden;
+      opacity: 0;
+  }
