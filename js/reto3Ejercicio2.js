@@ -48,6 +48,7 @@ form.addEventListener("submit",e=>{
 
             updateList()
             estadoCuenta()
+            
         }else{
             alert("Ha ingresado un número negativo en la cuenta")
             break;
@@ -66,6 +67,8 @@ function updateList(){
     //This code is to update the header row
     const countRows = document.getElementById("countRow")
     countRows.innerHTML = `<th scope="row" colspan"5">${datosCliente1.length}</th>`
+
+
 
 
     const d1 = document.getElementById('datosC1')
@@ -102,15 +105,18 @@ function updateList(){
 function estadoCuenta(){
     const d4 = document.getElementById('estadoCuenta1')
     d4.innerHTML=""
+
+    let sumaAcreedores
     
     if(datosCliente3>0){
         for (let index4 = 0; index4 < datosCliente3.length; index4++) {
             const element4 = document.createElement('td')
             element4.textContent=datosCliente3[index4]
             element4.style.setProperty("color","green")
+            sumaAcreedores+=datosCliente3[index4]
             d4.appendChild(element4)
         }
-    
+        alert(`la suma total de los acreedores es: ${sumaAcreedores}`)
         alert(estado[0])
         //element4.textContent=(`${estado[0]}`)
     }
