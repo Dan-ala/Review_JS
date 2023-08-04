@@ -54,7 +54,7 @@ function sumList() {
     
     let sum = inputValues[9]+inputValues[8]+inputValues[7]+inputValues[6]+inputValues[5]
 
-    document.body.textContent=`el total de los ultimos 5 numeros es:  ${sum}`
+    let result = document.body.textContent=`El total de los últimos 5 numeros es: ${sum}`
     //alert(`el total de los ultimos 5 numero son:  ${sum}`)
 }
 /*}

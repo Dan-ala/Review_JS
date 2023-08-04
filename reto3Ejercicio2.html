@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Reto 3</title>
+    <link rel="stylesheet" href="css/reto3Ejercicio2.css">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <p id="title">Dan's Bank</p>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="ingreDatos"><p id="inputData">Ingreso de Datos</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="infoClientes"><p id="inputData">Informe Clientes</p></a>
+            </li>
+          </ul>
+    </header>
+    
+    <p>Bienvenido!</p>
+    <div class="div1">
+        <img id="logo" src="img/logo.png" alt="Dans_Bank" width="850">
+    </div>
+
+    <section class="about-area about-five">
+        <div class="div2">
+            <form action="" id="form">
+                <p id="inputData">Ingreso de datos</p>
+
+                <div>
+                    <label for="noCuenta">No.Cuenta</label>
+                    <input type="number" name="noCuenta" id="noCuenta">
+                </div>
+                
+                <div>
+                    <label for="nomClie">Nombre Cliente</label>
+                    <input type="text" name="nomClie" id="nomClie">
+                </div>
+
+                <div>
+                    <label for="saldoAct">Saldo Actual</label>
+                    <input type="number" name="saldoAct" id="saldoAct">
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <section  class="about-area about-five">
+    
+            <table class="table table-bordered center" style="width: 80%;">
+                <thead class="table-dark">
+                    <p id="inputData">Informe de los Clientes</p>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">No. Cuenta</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Estado de la Cuenta</th>
+                        <th scope="col">Saldo Actual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  id="countRow">
+                        <th scope="row" colspan="5">0</th>
+                    </tr>
+
+                    <tr id="datosC1">
+                        <th scope="row">1</th>
+                        <td id="nC"></td>
+                        <td id="nomC"></td>
+                        <td id="estadoCuenta"></td>
+                        <td id="sAct"></td>
+                    </tr>
+
+                    <tr id="datosC2"> 
+                    </tr>
+
+                    <tr id="datosC3">
+                    </tr>
+
+                    <tr id="estadoCuenta1">
+                    </tr>
+
+                    <p id="inputData">Acreedor: <p id="ama">VERDE</p></p>
+                    <p id="inputData">Deudor: <p id="roj">ROJO</p></p>
+                    <p id="inputData">Nulo: <p id="azu">AZUL</p></p>
+
+                </tbody>
+            </table>
+    </section>
+    <a href="#" class="scrollUp">▲</a>
+    <footer></footer>
+
+    <script type="text/javascript" src="js/reto3Ejercicio2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
